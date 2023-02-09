@@ -1,0 +1,329 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(18, 20, 54, 0.75), rgba(25, 27, 56, 0.8)) , url(https://www.apple.com/v/ios/carplay/l/images/overview/hero_dashboard__e5p6b6yib5km_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head{
+    height: 100vh;
+}
+
+.baslik{
+    color: rgba(127, 255, 212, 0.7);
+    font-size: 48px;
+    font-family: 'Sniglet', cursive;
+}
+
+.head .navBar ul{
+    display: flex;
+}
+
+.head .navBar a{
+    text-decoration: none;
+}
+
+.head .navBar ul li{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-top: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.head .navBar ul li:hover{
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.basla{
+    right: 50px;
+    bottom: 50px;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;
+    animation-name: animation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes animation{
+    
+    0%{
+    right: 50px;
+    bottom: 50px;
+    background-color: rgba(128, 128, 128, 1);
+    }
+
+    25%{
+    right: 50px;
+    bottom: 60px;
+    background-color: rgba(128, 128, 128, 1);        
+    }
+
+    50%{
+    right: 50px;
+    bottom: 70px;
+    background-color: rgba(128, 128, 128, 1);
+    }
+
+    100%{
+    right: 50px;
+    bottom: 80px;
+    background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+.basla:hover{
+    right: 50px;
+    bottom: 50px;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;    
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+#genel{
+    background:linear-gradient(rgba(25, 25, 25,.9), rgba(0, 0, 0))
+}
+
+.quest{
+font-family: 'IM Fell English', serif;
+}
+
+.genelLeft{
+    border-right: 5px double gray;
+    animation-name: animation2;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.genelRight img{
+    width: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.frameBottom{
+    border-bottom: 5px double gray;
+    animation-name: animation3;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#apps{
+    background:linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+}
+
+.appsBaslik{
+    font-family: 'IM Fell English SC', serif;
+}
+
+.appsBaslik2{
+    color: rgba(218, 165, 32, 0.75);
+    font-family: 'IM Fell English SC', serif;
+}
+
+.console{
+    background:url(https://developer.apple.com/carplay/images/hero-car-ios13-large_2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.console ul{
+    padding: 128px;
+}
+
+.console ul li{
+    font-size: large;
+}
+
+.appsContentTitle{
+    color: rgba(255, 228, 196, 0.5);
+}
+
+.appsContent{
+    color: rgba(171, 144, 194, 0.95);
+}
+
+.appsContentTitleS{
+    color: rgba(44, 148, 84, 0.5);
+}
+
+.appsContentS{
+    color: rgba(8, 153, 64, 0.95);
+}
+
+.appsContentW{
+    color: rgba(151, 180, 162, 0.95);
+}
+
+.wpMobileResp{
+    text-align: end;
+}
+
+.appsContentTitleM{
+    color: rgba(216, 81, 81, 0.5);
+}
+
+.appsContentM{
+    color: rgba(185, 162, 162, 0.95);
+}
+
+.appsPic img{
+    max-width:400px ;
+    border-radius: 5px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.bottomLine{
+    border-bottom: 5px double gray;
+    animation-name: animation3;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes animation2{
+    
+    0%{
+        border-right: 5px double rgb(109, 53, 53, .2);
+    }
+
+    25%{
+        border-right: 5px double rgb(139, 58, 58, .2);       
+    }
+
+    50%{
+        border-right: 5px double rgb(172, 56, 56, .2);
+    }
+
+    100%{
+        border-right: 5px double rgb(199, 48, 48, .2);
+    }
+}
+
+@keyframes animation3{
+    
+    0%{
+        border-bottom: 5px double rgb(109, 53, 53, .2);
+    }
+
+    25%{
+        border-bottom: 5px double rgb(139, 58, 58, .2);       
+    }
+
+    50%{
+        border-bottom: 5px double rgb(172, 56, 56, .2);
+    }
+
+    100%{
+        border-bottom: 5px double rgb(199, 48, 48, .2);
+    }
+}
+
+#dev{
+    background:linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+}
+
+.card{
+    background:linear-gradient( rgba(150, 120, 120, 0.75),gray);
+}
+
+.card h3{
+    font-family: 'IM Fell English SC', serif;
+    color: deeppink;
+}
+
+.card p{
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.line{
+   border-bottom: 1px solid pink; 
+   margin-bottom: 12px;
+}
+
+@media screen and (max-width:770px) {
+
+    .header{
+    background:linear-gradient(rgba(18, 20, 54, 0.8), rgba(25, 27, 56, 0.85)) , url(https://www.apple.com/v/ios/carplay/l/images/overview/hero_dashboard__e5p6b6yib5km_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+    .head .navBar ul{
+        display: block;
+    }
+
+    .head .navBar ul li{
+    margin-top: 12px;
+    padding: 6px;
+    text-align: center;
+    }
+
+    .basla{
+        animation-play-state: paused;
+    }
+
+    .genelLeft{
+        border-right: none;
+    }
+
+    @keyframes animation2 {
+        0%{
+            border-right: none;
+        }
+        100%{
+            border-right: none;
+        }
+    }
+
+    #apps{
+        padding: 48px;
+    }
+
+    .appsPic img{
+        max-width:250px ;
+        border-radius: 5px;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .console{
+        background:url();
+    }
+
+    .appsContentTitle{
+        color: rgba(255, 228, 196, 0.5);
+        text-align: center;
+    }
+    
+    .appsContent{
+        color: rgba(171, 144, 194, 0.95);
+        text-align: center;
+    }
+
+    .wpMobileResp{
+        text-align: center;
+    }
+}
