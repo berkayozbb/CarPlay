@@ -38,12 +38,10 @@
           <ul class="list-unstyled">
             <a href="#genel"><li class="rounded">Genel Bakış</li></a>
             <a href="#apps"><li class="rounded">En Popüler Uygulamalar</li></a>
-            <a href=""
+            <a href="#dev"
               ><li class="rounded">
                 Uygulama Geliştirirken İzlenecek Yollar
-              </li></a
-            >
-            <a href=""><li class="rounded">Belli Başlı Şablonlar</li></a>
+              </li></a>
           </ul>
         </div>
         <div class="anaBaslik my-auto">
@@ -60,7 +58,8 @@
 
     <div id="genel">
       <div class="container">
-        <div class="row frameBottom">
+        <div class="bottomLine">
+        <div class="row">
           <div class="col-md-6 genelLeft">
             <h3 class="m-5 text-center quest text-white-50">CarPlay Nedir?</h3>
             <p class="m-5 text-center text-white opacity-75">
@@ -103,6 +102,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div id="apps">
@@ -194,8 +194,9 @@
 
     <div id="dev">
       <div class="container">
-        <h1 class="text-white-50 text-center p-5">CarPlay için Uygulama Geliştirirken Olmazsa Olmazlar!</h1>
-        <div class="bottomLine">
+        <h1 class="text-white-50 text-center p-5">
+          CarPlay için Uygulama Geliştirirken Olmazsa Olmazlar!
+        </h1>
           <div class="row">
             <div class="col-md-4 p-3">
               <div class="card text-center p-2">
@@ -211,9 +212,10 @@
                   CarPlay uygulamaları kullanıcı ara yüzündeki verileri
                   periyodik olarak 10 saniyede 1 defadan fazla yenileyemez.
                   <br />
-                  Kullanıcının kısa süreli ekrana bakma durumunda temel olan tüm
-                  bilgiler tutulmalı göz önünde olacak şekilde
-                  yerleştirilmelidir.
+                  CarPlay uygulamaları sürücü için tasarlanmıştır. CarPlay
+                  uygulamaları basit olmalıdır ve sürücünün dikkatini
+                  dağıtmamalıdır. Bu uygulamalar sürücüyü yol boyunca
+                  eğlendirmek değil, ona yardım etmek için tasarlanmıştır.
                 </p>
               </div>
             </div>
@@ -223,8 +225,9 @@
                   <h3>Direkt Bildirim</h3>
                 </div>
                 <p>
-                  CarPlay uygulaması, öncelik belirlediği özelliği kullanıcıya
-                  sunmak için tasarlanmalıdır.
+                  CarPlay uygulamaları tek bir amaca yönelik uygulamalardır ve
+                  bu uygulamaları kullanmak son derece basittir. Sürücü tek bir
+                  dokunuşla veya konuşarak işlem yapabilmelidir.
                   <br />
                   Tüm CarPlay uygulama akışları, sürüş sırasında kullanmak için
                   anlamlı olmalıdır. Primer görevle alakası bulunmayan
@@ -260,9 +263,138 @@
               </div>
             </div>
           </div>
-            
+          <div class="details text-white p-5">
+            <h2>Yazılımsal Boyut</h2>
+            <p>
+              Gerekli donanıma sahip yazılım geliştiren, Xcode ve Apple
+              Developer Program hesabı olan herkes CarPlay için uygulama
+              geliştirebilir.
+              <br />
+              Ayrıca Apple’ın sağladığı CarPlay simulator sayesinde geliştirme
+              esnasında CarPlay destekleyen bir araca sahip olmaya da gerek
+              yoktur.
+            </p>
+            <ol>
+              <li>CarPlay Yetkilerini Talep Etme</li>
+              <p>
+                CarPlay özellikli uygulamanızın gerektirdiği yetkilendirmeleri
+                belirtmek için bir dosya kullanın . Uygulama Kimliğinize
+                eklediğiniz yeteneklerle eşleşmelidirler. CarPlay, izin
+                verilecek çerçeve işlevselliğini belirlemek için bu dosyayı
+                kullanır.<br />Örnek Bazı Yetkiler ve Kategorileri : <br />
+                com.apple.developer.carplay-audio Ses <br />
+                com.apple.developer.carplay-communication İletişim <br />
+                com.apple.developer.carplay-charging elektrikli araç şarjı<br />
+                com.apple.developer.carplay-maps Navigasyon<br />
+                com.apple.developer.carplay-parking Otopark<br />
+                com.apple.developer.carplay-quick-ordering Hızlı Yemek
+                Siparişi<br />
+                Uygulama yetkileri hakkında daha fazla bilgi edinmek için
+                <a
+                  class="text-decoration-none"
+                  target="_blank"
+                  href="https://www.apple.com/"
+                  >Apple Resmi Sitesi</a
+                >'ni ziyaret edin.
+              </p>
+              <li>CarPlay Simulator Kullanımı</li>
+              <p>
+                Simulator varsayılan olarak CarPlay penceresini açmaz, ancak siz
+                etkinleştirdikten sonra oturumun geri kalanında pencereyi açık
+                tutar. Simulator, gerekli yetkilere sahip olmadığı sürece
+                CarPlay özellikli uygulamanızı görüntüleyemez.(İzin detayları
+                için önceki başlığı ziyaret ediniz.)
+              </p>
+              <p>
+                CarPlay penceresini açmak için: Xcode'da, iOS simülatorünü
+                kullanarak projenizi oluşturun ve çalıştırın.
+                <br />
+                Ardından Simülatör menü çubuğundan G/Ç > Harici Ekranlar >
+                CarPlay'i seçin.
+                <br />
+                Seçilen CarPlay penceresi 800x480 pikseldir.Birçok CarPlay
+                sisteminin ortak konfügrasyon ölçeğini kullanır.
+              </p>
+              <p>
+                Simulator'ün yetmediği durumlar söz konusu olabilir.
+                <br />Örneğin iPhone kitlendiğinde kilit açılmadan CarPlay'le
+                iletişime girme durumu.
+              </p>
+              <li>İçerik Görüntüleme</li>
+              <p>
+                CarPlay özellikli uygulamanızın kullanıcı arayüzünü sahneler
+                yönetir.Navigasyon uygulamaları, bu pencereye erişimi olan ve
+                onu harita içeriğini çizmek için kullanan tek uygulama
+                kategorisidir.
+                <br />
+                CarPlay, uygulamanızın sahnesini yönetirken, sistemin sahne
+                yaşam döngüsü olaylarını bildirdiği bir protole sahip olursunuz.
+                CarPlay, kullanıcı uygulamanızı başlattığında uygulamanızın
+                sahnesini ve protokolünü oluşturur.
+              </p>
+              <li>CarPlay Sahnesi Ekleme</li>
+              <p>
+                Bir CarPlay sahnesi eklemek için,yapılandırmasını Xcode proje
+                dosyanızın sahne bildiriminde sağlanır.Protokolün sınıf adı key
+                value olarak belirtilir.
+                <br />
+                Ardından kök şablonu oluşturmak için arayüz denetleyicisi
+                kullanılır.
+              </p>
+              <div class="imgs row">
+                <div class="col-md-6">
+                  <img class="imgs1 rounded" src="img/template1.png" alt="" />
+                </div>
+                <div class="col-md-6 d-flex">
+                  <img
+                    class="imgs1 rounded my-auto"
+                    src="img/template2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <li>Genel Amaçlı Şablonlar</li>
+              <p>
+                <ul>
+                <li> class CPListTemplate</li>Bir öğe listesini görüntüleyen ve yöneten
+                bir şablon. <br> <br>
+               <li> class CPGridTemplate </li>
+                Bir öğe ızgarasını görüntüleyen ve yöneten bir şablon. <br><br>
+               <li> class CPTabBarTemplate</li> 
+                Uygulamalar arasında geçiş yapmayı sağlayan üst menü şablonu. <br><br>
+               <li> protocol CPBarButtonProviding</li> 
+                Gezinme çubuğuna düğme bağlamak için kullanılan protokoller.<br><br>
+                <li>class CPNowPlayingTemplate</li>
+                Şu an çalınıyor bilgilerini görüntüleyen şablon.<br><br>
+                <li>class CPMapTemplate</li>
+                Uygulamanın harita üzerinde çizdiği rotayı görüntüleyen bir şablon. <br><br>
+                <li>class CPSearchTemplate</li>
+                Hedef arama ve arama sonuçları listesini görme yeteneği sağlayan bir şablon.<br><br>
+              </ul>
+              </p>
+              <li>CarPlay çerçevesinde barınan yaygın veri türleri</li>
+              <p>
+              <ul>
+                <li>class CPButton</li>
+                Kullanıcı dokunduğunda bir işleyiciyi çağıran düğme.<br><br>
+                <li>class CPImageSet</li>
+                Bir görüntünün açık ve koyu temsilleri.<br><br>
+                <li>let CarPlayErrorDomain: String</li>
+                Olası hatalarda CarPlay'in yansıttığı alan.
+              </ul>
+              </p>
+            </ol>
+          </div>
         </div>
       </div>
+
+      <div class="future justify-content-center d-flex">
+        <img src="img/future.jpg" alt="">
+      </div>
+    
+
+    <div class="footer">
+
     </div>
   </body>
 </html>
