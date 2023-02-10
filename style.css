@@ -290,6 +290,40 @@ font-family: 'IM Fell English', serif;
     background-color: black;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.fa:hover{
+    opacity: .75;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-linkedin:hover {
+    background:whitesmoke ;
+    color: #007bb5;
+}
+
+.fa-github {
+    background: #000000;
+    color: white;
+}
+
+.fa-github:hover {
+    background:whitesmoke ;
+    color: #000000;
+}
+
 @media screen and (max-width:770px) {
 
     .header{
@@ -339,6 +373,10 @@ font-family: 'IM Fell English', serif;
 
     .console{
         background:url();
+    }
+
+    .console ul{
+        list-style:disc ;
     }
 
     .appsContentTitle{
