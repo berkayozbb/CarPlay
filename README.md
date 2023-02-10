@@ -1,3 +1,5 @@
 # CarPlay
 HTML, CSS ve Bootstrap eşliğinde, ana hatlarıyla "CarPlay Uygulamaları" üzerine hazırlanmış arayüz.
-![carPlayMobile1](https://user-images.githubusercontent.com/116227509/217969269-1a50402c-f977-4795-92c1-bf7ff1fc9c8b.png)
+
+
+![carPlayMobile1](https://user-images.githubusercontent.com/116227509/218073365-edc3df5b-1366-40e2-abc8-51015baa19c4.png)
